@@ -399,13 +399,13 @@
     <section class="slide bg-background" aria-label="Automate">
       <div class="relative flex h-full flex-col px-40 py-24">
         <h2 class="font-heading text-7xl font-bold tracking-tight text-balance" data-rise>Automate</h2>
-        <p class="mt-6 max-w-[90rem] text-3xl/snug text-pretty text-muted-foreground" data-rise style="--i:1">An AI agent that runs routine IT work across your cloud apps.</p>
+        <p class="mt-6 max-w-[90rem] text-3xl/snug text-pretty text-muted-foreground" data-rise style="--i:1">Your systems send an event. Automate does the work in the cloud.</p>
 
         <!-- Left to right: a system triggers Automate in the cloud, which
              handles the work with the features listed on the right. -->
         <div class="my-auto flex items-center" data-rise style="--i:2">
           <!-- Triggers: three sources that start Automate. -->
-          <div class="flex w-80 shrink-0 flex-col gap-5">
+          <div class="flex w-72 shrink-0 flex-col gap-5">
             <div class="flex h-[100px] items-center gap-4 rounded-xl bg-background px-6 ring-1 ring-border">
               <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-muted/60"><i class="ri-ticket-2-line text-2xl" aria-hidden="true"></i></span>
               <span class="flex flex-col">
@@ -440,53 +440,59 @@
             <span class="flex size-14 items-center justify-center rounded-l-lg border-2 border-r-0 border-foreground bg-background"><i class="ri-webhook-line text-3xl" aria-hidden="true"></i></span>
           </div>
           <!-- Automate: a service in the idemeum cloud, shown as a console with
-               one run's log. Nothing runs on employees' computers. -->
-          <div class="flex w-[22rem] shrink-0 flex-col overflow-hidden rounded-xl bg-foreground text-background" role="img" aria-label="Automate in the idemeum cloud triaging a ticket: summary, category, priority and routing, written back to your ITSM">
+               one run's log: onboarding a new hire from an HR event. Nothing
+               runs on employees' computers. Names are examples. -->
+          <div class="flex w-[26rem] shrink-0 flex-col overflow-hidden rounded-xl bg-foreground text-background" role="img" aria-label="Automate in the idemeum cloud onboarding a new hire from Workday: account, groups and Slack, ready for day one">
             <div class="flex items-center gap-3 border-b border-background/15 px-5 py-3">
               <span class="flex size-10 shrink-0 items-center justify-center border border-background/20 bg-background/10"><i class="ri-flow-chart text-xl" aria-hidden="true"></i></span>
               <span class="text-xl font-semibold">Automate</span>
-              <span class="ml-auto flex items-center gap-1.5 text-sm text-background/60"><i class="ri-cloud-line" aria-hidden="true"></i>idemeum cloud</span>
+              <span class="ml-auto flex items-center gap-1.5 text-base text-background/60"><i class="ri-cloud-line" aria-hidden="true"></i>idemeum cloud</span>
             </div>
-            <ul class="flex flex-col gap-3 px-5 py-4 text-base">
+            <ul class="flex flex-col gap-3 px-5 py-4">
                 <li class="flex items-center gap-3">
-                  <i class="ri-checkbox-circle-line text-lg text-background/50" aria-hidden="true"></i>
-                  <span class="w-24 shrink-0 text-sm text-background/50">Received</span>
-                  <span class="text-background/85">Ticket #4821</span>
+                  <i class="ri-checkbox-circle-line text-xl text-background/50" aria-hidden="true"></i>
+                  <span class="w-28 shrink-0 text-base text-background/50">Received</span>
+                  <span class="text-lg text-background/85">New hire in Workday</span>
                 </li>
                 <li class="flex items-center gap-3">
-                  <i class="ri-checkbox-circle-line text-lg text-background/50" aria-hidden="true"></i>
-                  <span class="w-24 shrink-0 text-sm text-background/50">Summary</span>
-                  <span class="text-background/85">VPN fails after update</span>
+                  <i class="ri-checkbox-circle-line text-xl text-background/50" aria-hidden="true"></i>
+                  <span class="w-28 shrink-0 text-base text-background/50">Starts</span>
+                  <span class="text-lg text-background/85">Monday, Sales team</span>
                 </li>
                 <li class="flex items-center gap-3">
-                  <i class="ri-checkbox-circle-line text-lg text-background/50" aria-hidden="true"></i>
-                  <span class="w-24 shrink-0 text-sm text-background/50">Category</span>
-                  <span class="text-background/85">Network</span>
+                  <i class="ri-checkbox-circle-line text-xl text-background/50" aria-hidden="true"></i>
+                  <span class="w-28 shrink-0 text-base text-background/50">Account</span>
+                  <span class="text-lg text-background/85">Created</span>
                 </li>
                 <li class="flex items-center gap-3">
-                  <i class="ri-checkbox-circle-line text-lg text-background/50" aria-hidden="true"></i>
-                  <span class="w-24 shrink-0 text-sm text-background/50">Priority</span>
-                  <span class="text-background/85">High</span>
+                  <i class="ri-checkbox-circle-line text-xl text-background/50" aria-hidden="true"></i>
+                  <span class="w-28 shrink-0 text-base text-background/50">Groups</span>
+                  <span class="text-lg text-background/85">Sales, All staff</span>
                 </li>
                 <li class="flex items-center gap-3">
-                  <i class="ri-checkbox-circle-line text-lg text-background/50" aria-hidden="true"></i>
-                  <span class="w-24 shrink-0 text-sm text-background/50">Routed to</span>
-                  <span class="text-background/85">Network team</span>
+                  <i class="ri-checkbox-circle-line text-xl text-background/50" aria-hidden="true"></i>
+                  <span class="w-28 shrink-0 text-base text-background/50">Slack</span>
+                  <span class="text-lg text-background/85">Invite sent</span>
                 </li>
                 <li class="flex items-center gap-3">
-                  <i class="ri-checkbox-circle-fill text-lg text-background" aria-hidden="true"></i>
-                  <span class="w-24 shrink-0 text-sm text-background/50">Updated</span>
-                  <span class="font-semibold">Ticket in your ITSM</span>
+                  <i class="ri-checkbox-circle-fill text-xl text-background" aria-hidden="true"></i>
+                  <span class="w-28 shrink-0 text-base text-background/50">Finished</span>
+                  <span class="text-lg font-semibold">Ready for day one</span>
                 </li>
             </ul>
           </div>
 
-            <svg class="w-20 shrink-0 text-foreground/30" height="260" viewBox="0 0 80 260" fill="none" aria-hidden="true">
-            <path d="M0 130 H68" stroke="currentColor" stroke-width="2"/>
-            <path d="M64 123 L76 130 L64 137 Z" fill="currentColor"/>
+          <svg class="w-12 shrink-0 text-foreground/30" height="260" viewBox="0 0 48 260" fill="none" aria-hidden="true">
+            <path d="M0 130 H36" stroke="currentColor" stroke-width="2"/>
+            <path d="M32 123 L44 130 L32 137 Z" fill="currentColor"/>
           </svg>
 
-          <ul class="flex min-w-0 flex-1 flex-col divide-y divide-border rounded-xl bg-background px-8 py-2 ring-1 ring-border">
+          <!-- What Automate handles: a header-bar card, one feature per row. -->
+          <div class="flex min-w-0 flex-1 flex-col overflow-hidden rounded-xl bg-card ring-1 ring-border">
+            <div class="flex items-center border-b border-border bg-muted/60 px-8 py-5">
+              <span class="font-heading text-3xl font-semibold tracking-tight">What Automate handles</span>
+            </div>
+            <ul class="flex flex-col divide-y divide-border px-8 py-1">
               <li class="flex items-center gap-5 py-4">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-filter-3-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
@@ -505,10 +511,11 @@
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-route-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Automate workflows</span>
-                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Runs onboarding, access and scheduled work.</span>
+                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Runs onboarding, access, and scheduled work.</span>
                 </span>
               </li>
-          </ul>
+            </ul>
+          </div>
         </div>
 
         <footer class="flex items-center justify-between text-xl text-muted-foreground">
