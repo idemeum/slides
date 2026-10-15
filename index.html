@@ -270,7 +270,7 @@
     <section class="slide bg-background" aria-label="Assist">
       <div class="relative flex h-full flex-col px-40 py-24">
         <h2 class="font-heading text-7xl font-bold tracking-tight text-balance" data-rise>Assist</h2>
-        <p class="mt-6 max-w-[90rem] text-3xl/snug text-pretty text-muted-foreground" data-rise style="--i:1">An AI agent that answers employee IT requests on their laptop.</p>
+        <p class="mt-6 max-w-[90rem] text-3xl/snug text-pretty text-muted-foreground" data-rise style="--i:1">Employees describe the problem. Assist fixes it, or hands IT a diagnosis.</p>
 
         <!-- Left to right: the employee asks the Assist desktop app, which
              handles the request with the features listed on the right. -->
@@ -282,9 +282,9 @@
             </span>
           </div>
 
-            <svg class="w-32 shrink-0 text-foreground/30" height="260" viewBox="0 0 128 260" fill="none" aria-hidden="true">
-              <path d="M0 130 H116" stroke="currentColor" stroke-width="2"/>
-              <path d="M112 123 L124 130 L112 137 Z" fill="currentColor"/>
+            <svg class="w-24 shrink-0 text-foreground/30" height="260" viewBox="0 0 96 260" fill="none" aria-hidden="true">
+              <path d="M0 130 H84" stroke="currentColor" stroke-width="2"/>
+              <path d="M80 123 L92 130 L80 137 Z" fill="currentColor"/>
             </svg>
 
           <!-- Assist: a desktop app, shown open on the employee's laptop. The
@@ -324,56 +324,61 @@
             </div>
           </div>
 
-            <svg class="w-32 shrink-0 text-foreground/30" height="260" viewBox="0 0 128 260" fill="none" aria-hidden="true">
-              <path d="M0 130 H116" stroke="currentColor" stroke-width="2"/>
-              <path d="M112 123 L124 130 L112 137 Z" fill="currentColor"/>
+            <svg class="w-24 shrink-0 text-foreground/30" height="260" viewBox="0 0 96 260" fill="none" aria-hidden="true">
+              <path d="M0 130 H84" stroke="currentColor" stroke-width="2"/>
+              <path d="M80 123 L92 130 L80 137 Z" fill="currentColor"/>
             </svg>
 
-          <ul class="flex min-w-0 flex-1 flex-col divide-y divide-border rounded-xl bg-background px-8 py-2 ring-1 ring-border">
-
-              <li class="flex items-center gap-5 py-4">
+          <!-- What Assist handles: a header-bar card, one feature per row. -->
+          <div class="flex min-w-0 flex-1 flex-col overflow-hidden rounded-xl bg-card ring-1 ring-border">
+            <div class="flex items-center border-b border-border bg-muted/60 px-8 py-5">
+              <span class="font-heading text-3xl font-semibold tracking-tight">What Assist handles</span>
+            </div>
+            <ul class="flex flex-col divide-y divide-border px-8 py-1">
+              <li class="flex items-center gap-5 py-2.5">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-tools-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Device repair</span>
-                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Fixes VPN, Wi-Fi, disk, printer and app problems.</span>
+                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Fixes VPN, Wi-Fi, disk, printer, and app problems.</span>
                 </span>
               </li>
-              <li class="flex items-center gap-5 py-4">
+              <li class="flex items-center gap-5 py-2.5">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-cloud-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Cloud repair</span>
-                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Resets passwords and MFA, unlocks accounts.</span>
+                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Resets passwords and MFA, and unlocks accounts.</span>
                 </span>
               </li>
-              <li class="flex items-center gap-5 py-4">
+              <li class="flex items-center gap-5 py-2.5">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-stethoscope-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Triage and diagnostics</span>
-                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Escalates what it can't fix, with diagnostics.</span>
+                  <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Diagnoses issues and escalates what it can't fix.</span>
                 </span>
               </li>
-              <li class="flex items-center gap-5 py-4">
+              <li class="flex items-center gap-5 py-2.5">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-radar-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Proactive fixes</span>
                   <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Spots issues and offers a fix before anyone asks.</span>
                 </span>
               </li>
-              <li class="flex items-center gap-5 py-4">
+              <li class="flex items-center gap-5 py-2.5">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-book-open-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Knowledge base answers</span>
                   <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Answers policy and how-to questions.</span>
                 </span>
               </li>
-              <li class="flex items-center gap-5 py-4">
+              <li class="flex items-center gap-5 py-2.5">
                 <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-key-2-line text-2xl" aria-hidden="true"></i></span>
                 <span class="flex flex-col">
                   <span class="text-2xl font-semibold">Access requests</span>
                   <span class="mt-1 text-xl/snug text-pretty text-muted-foreground">Grants access to apps and groups.</span>
                 </span>
               </li>
-          </ul>
+            </ul>
+          </div>
         </div>
 
         <footer class="flex items-center justify-between text-xl text-muted-foreground">
