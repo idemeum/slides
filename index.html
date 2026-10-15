@@ -194,18 +194,17 @@
       </div>
     </section>
 
-    <!-- 3 · Meet Assist and Automate -->
-    <section class="slide bg-background" aria-label="Meet Assist and Automate">
+    <!-- 3 · Ask Assist, trigger Automate. -->
+    <section class="slide bg-background" aria-label="Ask Assist, trigger Automate.">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <h2 class="font-heading text-7xl font-bold tracking-tight text-balance" data-rise>Meet Assist and Automate</h2>
-        <p class="mt-6 max-w-6xl text-3xl/snug text-pretty text-muted-foreground" data-rise style="--i:1">Employees ask Assist. Your systems trigger Automate.</p>
+        <h2 class="font-heading text-7xl font-bold tracking-tight text-balance" data-rise>Ask Assist, trigger Automate.</h2>
 
-        <!-- One header-bar card per agent, each ending in a wireframe sketch
-             in the same window frame, with gray bars standing in for text.
-             Assist is a chat that ends fixed, Automate a three-step
-             workflow that ends done. -->
+        <!-- One header-bar card per agent, each ending in a gray stage: faint
+             curves, two windows stacked behind, and one small white card
+             in front. Assist's card is its empty input box, Automate's a
+             rule waiting to run. -->
         <div class="my-auto grid grid-cols-2 gap-8">
-          <div class="flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-border" data-rise style="--i:2">
+          <div class="flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-border" data-rise style="--i:1">
             <div class="flex items-center gap-4 border-b border-border bg-muted/60 px-8 py-6">
               <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-customer-service-2-line text-2xl" aria-hidden="true"></i></span>
               <span class="font-heading text-3xl font-semibold tracking-tight">Assist</span>
@@ -213,24 +212,22 @@
             <div class="flex flex-1 flex-col px-8 py-8">
               <p class="text-3xl/snug text-pretty text-muted-foreground">An AI agent that answers employee IT requests on their laptop.</p>
               <div class="mt-auto pt-12">
-                <div class="flex h-[200px] flex-col rounded-xl border-2 border-foreground/20 bg-background p-5" role="img" aria-label="Sketch of an employee chatting with Assist, ending with the issue fixed">
-                  <div class="flex gap-2">
-                    <span class="size-2.5 rounded-full bg-foreground/20"></span>
-                    <span class="size-2.5 rounded-full bg-foreground/20"></span>
-                    <span class="size-2.5 rounded-full bg-foreground/20"></span>
-                  </div>
-                  <span class="mt-4 ml-auto h-6 w-48 rounded-lg bg-foreground"></span>
-                  <span class="mt-3 h-6 w-72 rounded-lg bg-foreground/10"></span>
-                  <span class="mt-2 h-6 w-56 rounded-lg bg-foreground/10"></span>
-                  <div class="mt-auto flex items-center gap-3">
-                    <i class="ri-checkbox-circle-line text-2xl" aria-hidden="true"></i>
-                    <span class="h-2.5 w-24 rounded-full bg-foreground/15"></span>
+                <div class="relative flex h-[200px] items-center justify-center overflow-hidden rounded-xl bg-muted" role="img" aria-label="The Assist input box, empty and ready for an employee's question">
+                  <svg class="absolute inset-0 size-full text-background" viewBox="0 0 720 200" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                    <path d="M-20 165 C 140 115, 220 215, 380 155 S 620 75, 740 125" stroke="currentColor" stroke-width="3"/>
+                    <path d="M110 -20 C 170 60, 80 130, 190 220" stroke="currentColor" stroke-width="3"/>
+                  </svg>
+                  <span class="absolute inset-x-[16%] top-4 h-6 rounded-t-lg bg-foreground/15"></span>
+                  <span class="absolute inset-x-[11%] top-6 h-6 rounded-t-lg bg-foreground/[0.07]"></span>
+                  <div class="relative flex h-20 w-[62%] items-center gap-4 rounded-xl bg-background px-6 shadow-sm ring-1 ring-border">
+                    <span class="flex-1 text-2xl text-muted-foreground">Ask IT anything…</span>
+                    <span class="flex size-10 shrink-0 items-center justify-center rounded-full bg-foreground text-background"><i class="ri-arrow-up-line text-xl" aria-hidden="true"></i></span>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-border" data-rise style="--i:3">
+          <div class="flex flex-col overflow-hidden rounded-xl bg-card ring-1 ring-border" data-rise style="--i:2">
             <div class="flex items-center gap-4 border-b border-border bg-muted/60 px-8 py-6">
               <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-flow-chart text-2xl" aria-hidden="true"></i></span>
               <span class="font-heading text-3xl font-semibold tracking-tight">Automate</span>
@@ -238,27 +235,17 @@
             <div class="flex flex-1 flex-col px-8 py-8">
               <p class="text-3xl/snug text-pretty text-muted-foreground">An AI agent that runs routine IT work across your cloud apps.</p>
               <div class="mt-auto pt-12">
-                <div class="flex h-[200px] flex-col rounded-xl border-2 border-foreground/20 bg-background p-5" role="img" aria-label="Sketch of an Automate workflow running three steps through to done">
-                  <div class="flex gap-2">
-                    <span class="size-2.5 rounded-full bg-foreground/20"></span>
-                    <span class="size-2.5 rounded-full bg-foreground/20"></span>
-                    <span class="size-2.5 rounded-full bg-foreground/20"></span>
-                  </div>
-                  <div class="flex flex-1 items-center">
-                    <div class="flex-1 rounded-lg border-2 border-foreground/20 p-4">
-                      <span class="block h-2.5 w-2/3 rounded-full bg-foreground"></span>
-                      <span class="mt-2 block h-2.5 w-full rounded-full bg-foreground/15"></span>
-                    </div>
-                    <span class="h-0.5 w-8 shrink-0 bg-foreground/20"></span>
-                    <div class="flex-1 rounded-lg border-2 border-foreground/20 p-4">
-                      <span class="block h-2.5 w-2/3 rounded-full bg-foreground"></span>
-                      <span class="mt-2 block h-2.5 w-full rounded-full bg-foreground/15"></span>
-                    </div>
-                    <span class="h-0.5 w-8 shrink-0 bg-foreground/20"></span>
-                    <div class="flex-1 rounded-lg border-2 border-foreground/20 bg-muted p-4">
-                      <span class="block h-2.5 w-2/3 rounded-full bg-foreground"></span>
-                      <span class="mt-2 flex items-center gap-2"><i class="ri-check-line text-lg/none" aria-hidden="true"></i><span class="h-2.5 flex-1 rounded-full bg-foreground/15"></span></span>
-                    </div>
+                <div class="relative flex h-[200px] items-center justify-center overflow-hidden rounded-xl bg-muted" role="img" aria-label="An Automate rule: when a ticket arrives, run">
+                  <svg class="absolute inset-0 size-full text-background" viewBox="0 0 720 200" preserveAspectRatio="none" fill="none" aria-hidden="true">
+                    <path d="M-20 60 C 160 100, 260 20, 420 70 S 640 175, 740 145" stroke="currentColor" stroke-width="3"/>
+                    <path d="M600 -20 C 550 70, 640 120, 570 220" stroke="currentColor" stroke-width="3"/>
+                  </svg>
+                  <span class="absolute inset-x-[16%] top-4 h-6 rounded-t-lg bg-foreground/15"></span>
+                  <span class="absolute inset-x-[11%] top-6 h-6 rounded-t-lg bg-foreground/[0.07]"></span>
+                  <div class="relative flex h-20 w-[62%] items-center gap-4 rounded-xl bg-background px-6 shadow-sm ring-1 ring-border">
+                    <i class="ri-flashlight-line text-2xl" aria-hidden="true"></i>
+                    <span class="flex-1 text-2xl">When a ticket arrives</span>
+                    <span class="text-2xl text-muted-foreground">Run</span>
                   </div>
                 </div>
               </div>
