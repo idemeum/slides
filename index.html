@@ -31,7 +31,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -183,50 +183,37 @@
 
         <!-- The four problem areas from the website's problem section (new-site
              features-1.tsx), in the deck's header-bar cards: a numbered
-             square and the area in the gray header, then the buyer's words
-             under a faint opening quote mark. The numbers follow the
-             staircase's order (slide 4): intake, volume, downtime, then
-             manual processes. -->
+             square and the area in the gray header, then the problem in
+             muted text. The numbers follow the staircase's order (slide 4):
+             intake, volume, downtime, then manual processes. -->
         <ul class="my-auto grid grid-cols-4 gap-8">
           <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:2">
             <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
               <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">01</span></span>
               <h3 class="font-heading text-2xl font-semibold tracking-tight">Ticket intake</h3>
             </div>
-            <blockquote class="px-8 pt-6 pb-8">
-              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
-              <p class="text-2xl/9 text-pretty text-muted-foreground">Every ticket starts with gathering context.</p>
-            </blockquote>
+            <div class="px-8 py-7 text-2xl/9"><p class="text-pretty text-muted-foreground">Every ticket starts with gathering context.</p></div>
           </li>
           <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:3">
             <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
               <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">02</span></span>
               <h3 class="font-heading text-2xl font-semibold tracking-tight">Ticket volume</h3>
             </div>
-            <blockquote class="px-8 pt-6 pb-8">
-              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
-              <p class="text-2xl/9 text-pretty text-muted-foreground">The same resets and fixes arrive every day.</p>
-            </blockquote>
+            <div class="px-8 py-7 text-2xl/9"><p class="text-pretty text-muted-foreground">The same resets and fixes arrive every day.</p></div>
           </li>
           <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:4">
             <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
               <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">03</span></span>
               <h3 class="font-heading text-2xl font-semibold tracking-tight">Employee downtime</h3>
             </div>
-            <blockquote class="px-8 pt-6 pb-8">
-              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
-              <p class="text-2xl/9 text-pretty text-muted-foreground">Employees wait on IT for simple fixes.</p>
-            </blockquote>
+            <div class="px-8 py-7 text-2xl/9"><p class="text-pretty text-muted-foreground">Employees wait on IT for simple fixes.</p></div>
           </li>
           <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:5">
             <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
               <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">04</span></span>
               <h3 class="font-heading text-2xl font-semibold tracking-tight">Manual IT processes</h3>
             </div>
-            <blockquote class="px-8 pt-6 pb-8">
-              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
-              <p class="text-2xl/9 text-pretty text-muted-foreground">Onboarding, offboarding are manual checklists.</p>
-            </blockquote>
+            <div class="px-8 py-7 text-2xl/9"><p class="text-pretty text-muted-foreground">Onboarding, offboarding are manual checklists.</p></div>
           </li>
         </ul>
 
