@@ -31,7 +31,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;900&display=swap" rel="stylesheet" />
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css" rel="stylesheet" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
@@ -175,37 +175,60 @@
       </div>
     </section>
 
-    <!-- 2 · We take routine IT off your team’s plate -->
-    <section class="slide bg-background" aria-label="We take routine IT off your team’s plate">
+    <!-- 2 · Service desks overflow with routine work (the problem) -->
+    <section class="slide bg-background" aria-label="Service desks overflow with routine work">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>We take routine IT off your team’s plate</h2>
-        <p class="mt-6 max-w-[84rem] text-[32px]/12 text-pretty text-muted-foreground" data-rise style="--i:1">Routine work fills your team’s day in three ways.</p>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>Service desks overflow with routine work</h2>
+        <p class="mt-6 max-w-[84rem] text-[32px]/12 text-pretty text-muted-foreground" data-rise style="--i:1">Four kinds of work fill your team’s day, and most of it doesn’t need a person.</p>
 
-        <!-- Three header-bar cards, numbered in place of icons. Each names only
-             the routine work; the solution slides answer it. -->
-        <div class="my-auto grid grid-cols-3 gap-10">
-          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:2">
-            <div class="flex items-center gap-5 border-b border-border bg-muted/50 px-8.5 py-6">
-              <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><span class="text-xl text-foreground">01</span></span>
-              <p class="font-heading text-3xl/12 font-semibold tracking-tight">Triage</p>
+        <!-- The four problem areas from the website's problem section (new-site
+             features-1.tsx), in the deck's header-bar cards: a numbered
+             square and the area in the gray header, then the buyer's words
+             under a faint opening quote mark. The numbers follow the
+             staircase's order (slide 4): intake, volume, downtime, then
+             manual processes. -->
+        <ul class="my-auto grid grid-cols-4 gap-8">
+          <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:2">
+            <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
+              <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">01</span></span>
+              <h3 class="font-heading text-2xl font-semibold tracking-tight">Ticket intake</h3>
             </div>
-            <div class="px-8.5 py-7 text-2xl"><p class="text-pretty text-muted-foreground">IT admins start every ticket by gathering context.</p></div>
-          </div>
-          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:3">
-            <div class="flex items-center gap-5 border-b border-border bg-muted/50 px-8.5 py-6">
-              <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><span class="text-xl text-foreground">02</span></span>
-              <p class="font-heading text-3xl/12 font-semibold tracking-tight">Resolve</p>
+            <blockquote class="px-8 pt-6 pb-8">
+              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
+              <p class="text-2xl/9 text-pretty text-muted-foreground">Every ticket starts with gathering context.</p>
+            </blockquote>
+          </li>
+          <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:3">
+            <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
+              <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">02</span></span>
+              <h3 class="font-heading text-2xl font-semibold tracking-tight">Ticket volume</h3>
             </div>
-            <div class="px-8.5 py-7 text-2xl"><p class="text-pretty text-muted-foreground">The same resets and laptop fixes arrive every day.</p></div>
-          </div>
-          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:4">
-            <div class="flex items-center gap-5 border-b border-border bg-muted/50 px-8.5 py-6">
-              <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><span class="text-xl text-foreground">03</span></span>
-              <p class="font-heading text-3xl/12 font-semibold tracking-tight">Automate</p>
+            <blockquote class="px-8 pt-6 pb-8">
+              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
+              <p class="text-2xl/9 text-pretty text-muted-foreground">The same resets and fixes arrive every day.</p>
+            </blockquote>
+          </li>
+          <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:4">
+            <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
+              <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">03</span></span>
+              <h3 class="font-heading text-2xl font-semibold tracking-tight">Employee downtime</h3>
             </div>
-            <div class="px-8.5 py-7 text-2xl"><p class="text-pretty text-muted-foreground">Onboarding and offboarding are checklists someone runs by hand.</p></div>
-          </div>
-        </div>
+            <blockquote class="px-8 pt-6 pb-8">
+              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
+              <p class="text-2xl/9 text-pretty text-muted-foreground">Employees wait on IT for simple fixes.</p>
+            </blockquote>
+          </li>
+          <li class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:5">
+            <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-8 py-5">
+              <span class="flex size-10 shrink-0 items-center justify-center border border-border bg-background"><span class="text-lg text-foreground">04</span></span>
+              <h3 class="font-heading text-2xl font-semibold tracking-tight">Manual IT processes</h3>
+            </div>
+            <blockquote class="px-8 pt-6 pb-8">
+              <span aria-hidden="true" class="-mt-2 block h-10 font-heading text-[84px] leading-none font-black text-muted-foreground/30">“</span>
+              <p class="text-2xl/9 text-pretty text-muted-foreground">Onboarding, offboarding are manual checklists.</p>
+            </blockquote>
+          </li>
+        </ul>
 
         <footer class="flex items-center justify-between text-xl text-muted-foreground">
           <div class="flex items-center gap-2.5">
@@ -274,7 +297,7 @@
                   <span class="flex size-10 shrink-0 items-center justify-center border font-mono text-[17px] transition-colors duration-300 border-border bg-background text-foreground group-[.is-lit]:border-foreground group-[.is-lit]:bg-foreground group-[.is-lit]:text-background">01</span>
                   <i class="ri-arrow-right-line text-2xl text-muted-foreground" aria-hidden="true"></i>
                 </span>
-                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">Ticket triage</h3>
+                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">AI ticket triage</h3>
                 <p class="mt-3 text-[20px]/[29px] text-pretty text-muted-foreground">Every ticket arrives ready to work.</p>
                 <span class="mt-auto flex items-center gap-3 pt-[46px] text-[20px] whitespace-nowrap"><span aria-hidden="true" class="flex size-[34px] shrink-0 items-center justify-center border border-border bg-background"><i class="ri-flow-chart text-[20px]"></i></span><span class="font-medium">Automate</span><span class="text-muted-foreground">for IT admins</span></span>
               </div>
@@ -288,7 +311,7 @@
                   <span class="flex size-10 shrink-0 items-center justify-center border font-mono text-[17px] transition-colors duration-300 border-border bg-background text-foreground group-[.is-lit]:border-foreground group-[.is-lit]:bg-foreground group-[.is-lit]:text-background">02</span>
                   <i class="ri-arrow-right-line text-2xl text-muted-foreground" aria-hidden="true"></i>
                 </span>
-                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">AI helpdesk</h3>
+                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">AI ticket resolution</h3>
                 <p class="mt-3 text-[20px]/[29px] text-pretty text-muted-foreground">Routine tickets resolved without an IT admin.</p>
                 <span class="mt-auto flex items-center gap-3 pt-[46px] text-[20px] whitespace-nowrap"><span aria-hidden="true" class="flex size-[34px] shrink-0 items-center justify-center border border-border bg-background"><i class="ri-flow-chart text-[20px]"></i></span><span class="font-medium">Automate</span><span class="text-muted-foreground">for IT admins</span></span>
               </div>
@@ -302,8 +325,8 @@
                   <span class="flex size-10 shrink-0 items-center justify-center border font-mono text-[17px] transition-colors duration-300 border-border bg-background text-foreground group-[.is-lit]:border-foreground group-[.is-lit]:bg-foreground group-[.is-lit]:text-background">03</span>
                   <i class="ri-arrow-right-line text-2xl text-muted-foreground" aria-hidden="true"></i>
                 </span>
-                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">Agentic support</h3>
-                <p class="mt-3 text-[20px]/[29px] text-pretty text-muted-foreground">Issues fixed before they become tickets.</p>
+                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">Self-service IT support</h3>
+                <p class="mt-3 text-[20px]/[29px] text-pretty text-muted-foreground">Employee issues fixed, before they become tickets.</p>
                 <span class="mt-auto flex items-center gap-3 pt-[46px] text-[20px] whitespace-nowrap"><span aria-hidden="true" class="flex size-[34px] shrink-0 items-center justify-center border border-border bg-background"><i class="ri-customer-service-2-line text-[20px]"></i></span><span class="font-medium">Assist</span><span class="text-muted-foreground">for employees</span></span>
               </div>
             </li>
@@ -317,7 +340,7 @@
                   <span class="flex size-10 shrink-0 items-center justify-center border font-mono text-[17px] transition-colors duration-300 border-primary-foreground/30 group-[.is-lit]:border-primary-foreground group-[.is-lit]:bg-primary-foreground group-[.is-lit]:text-primary">04</span>
                   <i class="ri-arrow-right-line text-2xl text-primary-foreground/60" aria-hidden="true"></i>
                 </span>
-                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">AI workflow automation</h3>
+                <h3 class="mt-9 font-heading text-[26px]/10 font-semibold tracking-tight text-balance">IT workflow automation</h3>
                 <p class="mt-3 text-[20px]/[29px] text-pretty text-primary-foreground/70">Routine IT work runs without a ticket.</p>
                 <span class="mt-auto flex items-center gap-3 pt-[46px] text-[20px] whitespace-nowrap"><span aria-hidden="true" class="flex size-[34px] shrink-0 items-center justify-center border border-primary-foreground/30"><i class="ri-flow-chart text-[20px]"></i></span><span class="font-medium">Automate</span><span class="text-primary-foreground/70">for IT admins</span></span>
               </div>
@@ -348,15 +371,10 @@
       </div>
     </section>
 
-    <!-- 5 · Ticket triage (part of the AI helpdesk) -->
-    <section class="slide bg-background" aria-label="Ticket triage">
+    <!-- 5 · AI ticket triage (part of AI ticket resolution) -->
+    <section class="slide bg-background" aria-label="AI ticket triage">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <!-- The badge, at the far right of the title row, names the problem
-             area from slide 2 (Triage, Resolve, Automate) this solution covers. -->
-        <div class="flex items-center justify-between gap-8" data-rise>
-          <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance">Ticket triage</h2>
-          <span class="inline-flex shrink-0 items-center gap-2.5 rounded-full border border-border bg-card/60 px-4.5 py-1.5 text-lg font-medium text-muted-foreground"><span aria-hidden="true" class="size-2 rounded-full bg-primary"></span>Triage</span>
-        </div>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>AI ticket triage</h2>
 
         <!-- Split like the website's feature sections: what the solution is,
              how it works, and an example on the left; on the right, the ticket
@@ -476,23 +494,15 @@
       </div>
     </section>
 
-    <!-- 6 · AI helpdesk (ticket triage, plus resolution) -->
-    <section class="slide bg-background" aria-label="AI helpdesk">
+    <!-- 6 · AI ticket resolution (ticket triage, plus resolution) -->
+    <section class="slide bg-background" aria-label="AI ticket resolution">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <!-- The badges, at the far right of the title row, name the problem
-             areas from slide 2 (Triage, Resolve, Automate) this solution covers. -->
-        <div class="flex items-center justify-between gap-8" data-rise>
-          <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance">AI helpdesk</h2>
-          <div class="flex shrink-0 items-center gap-3">
-            <span class="inline-flex shrink-0 items-center gap-2.5 rounded-full border border-border bg-card/60 px-4.5 py-1.5 text-lg font-medium text-muted-foreground"><span aria-hidden="true" class="size-2 rounded-full bg-primary"></span>Triage</span>
-            <span class="inline-flex shrink-0 items-center gap-2.5 rounded-full border border-border bg-card/60 px-4.5 py-1.5 text-lg font-medium text-muted-foreground"><span aria-hidden="true" class="size-2 rounded-full bg-primary"></span>Resolve</span>
-          </div>
-        </div>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>AI ticket resolution</h2>
 
         <!-- Split like ticket triage: what the solution is and how it
              works on the left; on the right, the ticket reaches Automate's
              webhook, Automate writes the outcome back, and a line drops to
-             what the AI helpdesk does. Draft copy. -->
+             what AI ticket resolution does. Draft copy. -->
         <div class="my-auto grid grid-cols-2 items-center gap-24">
           <div class="flex flex-col gap-12" data-rise style="--i:1">
             <div class="flex flex-col gap-3.5">
@@ -507,7 +517,7 @@
               <li class="flex gap-3.5"><i class="ri-check-line mt-1 text-2xl text-foreground" aria-hidden="true"></i><span>Routes what it can’t fix, with full context</span></li>
               </ul>
             </div>
-            <!-- The example reads as an aside, styled as on Ticket triage. -->
+            <!-- The example reads as an aside, styled as on AI ticket triage. -->
             <div class="flex flex-col gap-3 border-l border-foreground bg-muted/50 px-8 py-6">
               <h3 class="flex items-center gap-3 text-xl font-medium"><i class="ri-ticket-2-line text-xl" aria-hidden="true"></i>Example</h3>
               <p class="text-xl/8 text-pretty text-muted-foreground">A <span class="font-medium text-foreground">“Locked out of my account”</span> ticket lands in ConnectWise. Automate unlocks the account in Okta, notes what it did, and closes the ticket.</p>
@@ -545,7 +555,7 @@
             <div class="mt-10 flex w-full flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border">
               <div class="flex items-center gap-4 border-b border-border bg-muted/50 px-7 py-4 text-[22px]/8">
                 <span class="flex size-9 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-flow-chart text-[22px]" aria-hidden="true"></i></span>
-                <span class="font-medium">What the AI helpdesk does</span>
+                <span class="font-medium">What AI ticket resolution does</span>
               </div>
               <ul class="flex flex-col divide-y divide-border">
                 <li class="flex gap-4 px-7 py-2 text-lg">
@@ -580,15 +590,10 @@
       </div>
     </section>
 
-    <!-- 7 · Agentic support -->
-    <section class="slide bg-background" aria-label="Agentic support">
+    <!-- 7 · Self-service IT support -->
+    <section class="slide bg-background" aria-label="Self-service IT support">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <!-- The badge, at the far right of the title row, names the problem
-             area from slide 2 (Triage, Resolve, Automate) this solution covers. -->
-        <div class="flex items-center justify-between gap-8" data-rise>
-          <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance">Agentic support</h2>
-          <span class="inline-flex shrink-0 items-center gap-2.5 rounded-full border border-border bg-card/60 px-4.5 py-1.5 text-lg font-medium text-muted-foreground"><span aria-hidden="true" class="size-2 rounded-full bg-primary"></span>Resolve</span>
-        </div>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>Self-service IT support</h2>
 
         <!-- Split like the website's feature sections: what the solution is
              and how it works on the left; on the right, an employee asks
@@ -608,7 +613,7 @@
               <li class="flex gap-3.5"><i class="ri-check-line mt-1 text-2xl text-foreground" aria-hidden="true"></i><span>Escalates with diagnostics when it can't fix</span></li>
               </ul>
             </div>
-            <!-- The example reads as an aside, styled as on Ticket triage; the
+            <!-- The example reads as an aside, styled as on AI ticket triage; the
                  icon is the employee's, as in the diagram. -->
             <div class="flex flex-col gap-3 border-l border-foreground bg-muted/50 px-8 py-6">
               <h3 class="flex items-center gap-3 text-xl font-medium"><i class="ri-user-line text-xl" aria-hidden="true"></i>Example</h3>
@@ -726,15 +731,10 @@
       </div>
     </section>
 
-    <!-- 8 · AI workflow automation (work that needs no ticket) -->
-    <section class="slide bg-background" aria-label="AI workflow automation">
+    <!-- 8 · IT workflow automation (work that needs no ticket) -->
+    <section class="slide bg-background" aria-label="IT workflow automation">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <!-- The badge, at the far right of the title row, names the problem
-             area from slide 2 (Triage, Resolve, Automate) this solution covers. -->
-        <div class="flex items-center justify-between gap-8" data-rise>
-          <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance">AI workflow automation</h2>
-          <span class="inline-flex shrink-0 items-center gap-2.5 rounded-full border border-border bg-card/60 px-4.5 py-1.5 text-lg font-medium text-muted-foreground"><span aria-hidden="true" class="size-2 rounded-full bg-primary"></span>Automate</span>
-        </div>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>IT workflow automation</h2>
 
         <!-- Split like ticket triage: what the solution is and how it
              works on the left; on the right, an event from your systems
@@ -755,7 +755,7 @@
               <li class="flex gap-3.5"><i class="ri-check-line mt-1 text-2xl text-foreground" aria-hidden="true"></i><span>Built-in and custom skills</span></li>
               </ul>
             </div>
-            <!-- The example reads as an aside, styled as on Ticket triage; the
+            <!-- The example reads as an aside, styled as on AI ticket triage; the
                  icon is the events', as in the diagram. -->
             <div class="flex flex-col gap-3 border-l border-foreground bg-muted/50 px-8 py-6">
               <h3 class="flex items-center gap-3 text-xl font-medium"><i class="ri-flashlight-line text-xl" aria-hidden="true"></i>Example</h3>
@@ -835,14 +835,9 @@
     <!-- 9 · Proactive IT (Assist acts before the employee asks) -->
     <section class="slide bg-background" aria-label="Proactive IT">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <!-- The badge, at the far right of the title row, names the problem
-             area from slide 2 (Triage, Resolve, Automate) this solution covers. -->
-        <div class="flex items-center justify-between gap-8" data-rise>
-          <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance">Proactive IT</h2>
-          <span class="inline-flex shrink-0 items-center gap-2.5 rounded-full border border-border bg-card/60 px-4.5 py-1.5 text-lg font-medium text-muted-foreground"><span aria-hidden="true" class="size-2 rounded-full bg-primary"></span>Resolve</span>
-        </div>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>Proactive IT</h2>
 
-        <!-- Split like Agentic support: what the solution is, how it works,
+        <!-- Split like Self-service IT support: what the solution is, how it works,
              and an example on the left; on the right, a trigger on the laptop
              reaches Assist, Assist offers the employee a fix, and a line drops
              to what Assist watches for. Draft copy: only the full-disk and
@@ -861,7 +856,7 @@
               <li class="flex gap-3.5"><i class="ri-check-line mt-1 text-2xl text-foreground" aria-hidden="true"></i><span>Escalates with diagnostics when it can’t fix</span></li>
               </ul>
             </div>
-            <!-- The example reads as an aside, styled as on Ticket triage; the
+            <!-- The example reads as an aside, styled as on AI ticket triage; the
                  icon is the trigger's, as in the diagram. -->
             <div class="flex flex-col gap-3 border-l border-foreground bg-muted/50 px-8 py-6">
               <h3 class="flex items-center gap-3 text-xl font-medium"><i class="ri-pulse-line text-xl" aria-hidden="true"></i>Example</h3>
@@ -871,7 +866,7 @@
 
           <div class="flex flex-col items-center" data-rise style="--i:2">
             <div class="relative mt-[68px] flex items-center">
-              <!-- Path above the row, as on Agentic support: a line rises from
+              <!-- Path above the row, as on Self-service IT support: a line rises from
                    the laptop's top center, runs right, and drops into the
                    employee with an arrowhead ("Offers a fix"). Same nodes and
                    gaps, so the same offsets: the laptop's center sits 328px
@@ -889,7 +884,7 @@
                 <span class="font-medium">Trigger</span>
               </div>
               <svg aria-hidden="true" class="w-16 shrink-0 text-foreground" height="12" viewBox="0 0 64 12" fill="none"><path d="M0 6 H56" stroke="currentColor" stroke-width="1"/><path d="M56 1 L64 6 L56 11 Z" fill="currentColor"/></svg>
-              <!-- Assist as the same small laptop as on Agentic support. -->
+              <!-- Assist as the same small laptop as on Self-service IT support. -->
               <div class="relative flex w-44 shrink-0 flex-col items-center" role="img" aria-label="Assist on the employee's laptop">
                 <div class="w-full rounded-lg bg-primary p-1.5">
                   <div class="flex h-24 items-center justify-center gap-2.5 bg-muted bg-[radial-gradient(circle_at_center,color-mix(in_oklab,var(--color-foreground)_8%,transparent),transparent_70%)]">
@@ -977,25 +972,88 @@
       </div>
     </section>
 
-    <!-- 11 · Ask Assist, trigger Automate -->
-    <section class="slide bg-background" aria-label="Ask Assist, trigger Automate">
+    <!-- 11 · AI that gets work done (the two agents) -->
+    <section class="slide bg-background" aria-label="AI that gets work done">
       <div class="relative flex h-full flex-col px-40 py-24">
-        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>Ask Assist, trigger Automate</h2>
+        <h2 class="font-heading text-7xl/20 font-bold tracking-tight text-balance" data-rise>AI that gets work done</h2>
+        <p class="mt-6 max-w-[84rem] text-[32px]/12 text-pretty text-muted-foreground" data-rise style="--i:1">Automate runs what your systems trigger, and Assist fixes what employees ask for.</p>
 
-        <!-- One header-bar card per agent, each ending in the website's picture
-             for that agent, held still on one frame and scaled up, kept short:
-             Assist's skills (two done, two in progress) and an Automate run
-             (a new hire through onboarding into Okta, Google and Slack).
-             Logos are the site's, inlined as .logo-* classes. -->
+        <!-- The website's agent cards (new-site features-1b.tsx), scaled for
+             the slide: Automate then Assist, each a header-bar card with a
+             line of copy and a small picture held still (the website's
+             Learn more buttons are left off). Automate's picture is a new hire run as a
+             finished workflow graph (automate-flow.tsx): the trigger and
+             skill with their chips, and Okta, Google and Slack all done.
+             Assist's is the tools it's running, two done and two in progress
+             (tool-runs.tsx). Logos are the site's, inlined as .logo-* classes. -->
         <div class="my-auto grid grid-cols-2 gap-10">
-          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:1">
+          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:2">
+            <div class="flex items-center gap-5 border-b border-border bg-muted/50 px-8.5 py-6">
+              <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-flow-chart text-[28px]" aria-hidden="true"></i></span>
+              <h3 class="font-heading text-3xl/12 font-semibold tracking-tight">Automate</h3>
+            </div>
+            <div class="flex flex-1 flex-col p-8.5">
+              <p class="min-h-17 max-w-[41rem] text-2xl text-pretty text-muted-foreground">Cloud AI agent that triages and resolves tickets in your ITSM, and runs routine IT work when your systems trigger it.</p>
+              <div class="mt-8 flex flex-1 flex-col">
+                <div class="relative flex h-54 flex-col items-center justify-center overflow-hidden border border-border px-5 py-2.5" role="img" aria-label="An Automate run: a Workday new hire starts the new-hire onboarding catalog skill, done in Okta, Google and Slack">
+                  <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:28px_28px] bg-center opacity-60 [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,black_30%,transparent)]" aria-hidden="true"></div>
+                  <div class="relative flex w-full flex-col items-center">
+                    <div class="flex max-w-full items-center gap-4 border border-border bg-background py-1.5 pr-1.5 pl-1.5 text-lg">
+                      <span class="flex size-8 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-user-add-line text-lg" aria-hidden="true"></i></span>
+                      <span class="truncate">Workday new hire</span>
+                      <span class="shrink-0 border border-border bg-background px-3 py-0.5 text-base text-muted-foreground">HR event</span>
+                    </div>
+                    <span class="block h-4 w-px bg-foreground"></span>
+                    <div class="flex max-w-full items-center gap-4 border border-border bg-background py-1.5 pr-2.5 pl-1.5 text-lg">
+                      <span class="flex size-8 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-file-list-3-line text-lg" aria-hidden="true"></i></span>
+                      <span class="truncate">New-hire onboarding</span>
+                      <span class="shrink-0 border border-border bg-background px-3 py-0.5 text-base text-muted-foreground">Catalog skill</span>
+                      <span class="flex size-6 shrink-0 items-center justify-center border border-border bg-background text-green-700"><i class="ri-check-line text-lg/none" aria-hidden="true"></i></span>
+                    </div>
+                    <span class="block h-3 w-px bg-foreground"></span>
+                    <!-- Branches: a bar from the first tool column's center to
+                         the last's (half a column in from each side, columns
+                         being a third of the width less two gaps), then a drop
+                         into each tool. -->
+                    <div class="relative w-full max-w-[30rem]">
+                      <span class="absolute top-0 right-[calc((100%-1.75rem)/6)] left-[calc((100%-1.75rem)/6)] h-px bg-foreground"></span>
+                      <div class="grid grid-cols-3 gap-3.5">
+                        <div class="flex flex-col items-center">
+                          <span class="block h-4 w-px bg-foreground"></span>
+                          <div class="relative flex size-13 items-center justify-center border border-border bg-muted">
+                            <span aria-hidden="true" class="logo logo-okta size-7"></span>
+                            <span class="absolute -top-3 -right-3 flex size-6 items-center justify-center border border-border bg-background text-green-700"><i class="ri-check-line text-lg/none" aria-hidden="true"></i></span>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span class="block h-4 w-px bg-foreground"></span>
+                          <div class="relative flex size-13 items-center justify-center border border-border bg-muted">
+                            <i class="ri-google-line text-[28px]/none" aria-hidden="true"></i>
+                            <span class="absolute -top-3 -right-3 flex size-6 items-center justify-center border border-border bg-background text-green-700"><i class="ri-check-line text-lg/none" aria-hidden="true"></i></span>
+                          </div>
+                        </div>
+                        <div class="flex flex-col items-center">
+                          <span class="block h-4 w-px bg-foreground"></span>
+                          <div class="relative flex size-13 items-center justify-center border border-border bg-muted">
+                            <span aria-hidden="true" class="logo logo-slack size-7"></span>
+                            <span class="absolute -top-3 -right-3 flex size-6 items-center justify-center border border-border bg-background text-green-700"><i class="ri-check-line text-lg/none" aria-hidden="true"></i></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:3">
             <div class="flex items-center gap-5 border-b border-border bg-muted/50 px-8.5 py-6">
               <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-customer-service-2-line text-[28px]" aria-hidden="true"></i></span>
               <h3 class="font-heading text-3xl/12 font-semibold tracking-tight">Assist</h3>
             </div>
             <div class="flex flex-1 flex-col p-8.5">
-              <p class="min-h-17 max-w-[41rem] text-2xl text-pretty text-muted-foreground">An AI agent that fixes employee IT issues on their laptop and in the cloud.</p>
-              <div class="mt-10 flex flex-1 flex-col" role="img" aria-label="Assist running skills: reset_mfa and unlock_account done in Okta; sync_device in Intune and force_ddm_sync in Jamf in progress">
+              <p class="min-h-17 max-w-[41rem] text-2xl text-pretty text-muted-foreground">Conversational AI agent that fixes employee IT issues on the laptop and in the cloud.</p>
+              <div class="mt-8 flex flex-1 flex-col" role="img" aria-label="Assist running skills: reset_mfa and unlock_account done in Okta; sync_device in Intune and force_ddm_sync in Jamf in progress">
                 <ul class="grid grid-cols-1 gap-2.5">
                   <li class="flex items-center gap-4 border border-border bg-muted px-5 py-2.5 text-lg/none text-foreground">
                     <span aria-hidden="true" class="logo logo-okta size-6 shrink-0"></span>
@@ -1018,63 +1076,6 @@
                     <span class="ml-auto flex size-6 shrink-0 items-center justify-center border border-border bg-background text-foreground"><i class="ri-loader-4-line text-lg/none" aria-hidden="true"></i></span>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col overflow-hidden rounded-[24px] bg-card ring-1 ring-border" data-rise style="--i:2">
-            <div class="flex items-center gap-5 border-b border-border bg-muted/50 px-8.5 py-6">
-              <span class="flex size-12 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-flow-chart text-[28px]" aria-hidden="true"></i></span>
-              <h3 class="font-heading text-3xl/12 font-semibold tracking-tight">Automate</h3>
-            </div>
-            <div class="flex flex-1 flex-col p-8.5">
-              <p class="min-h-17 max-w-[41rem] text-2xl text-pretty text-muted-foreground">An AI agent that runs routine IT work across your cloud apps.</p>
-              <div class="mt-10 flex flex-1 flex-col">
-                <div class="relative flex h-54 flex-col items-center justify-center overflow-hidden border border-border px-5 py-2.5" role="img" aria-label="An Automate run: a Workday new hire starts the new-hire onboarding skill, done in Okta and Google, in progress in Slack">
-                  <div class="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,var(--color-border)_1px,transparent_1px),linear-gradient(to_bottom,var(--color-border)_1px,transparent_1px)] bg-[size:28px_28px] bg-center opacity-60 [mask-image:radial-gradient(ellipse_70%_70%_at_50%_50%,black_30%,transparent)]" aria-hidden="true"></div>
-                  <div class="relative flex w-full flex-col items-center">
-                    <div class="flex max-w-full items-center gap-4 border border-border bg-background py-1.5 pr-4 pl-1.5 text-lg">
-                      <span class="flex size-8 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-user-add-line text-lg" aria-hidden="true"></i></span>
-                      <span class="truncate">Workday new hire</span>
-                    </div>
-                    <span class="block h-4 w-px bg-foreground"></span>
-                    <div class="flex max-w-full items-center gap-4 border border-border bg-background py-1.5 pr-4 pl-1.5 text-lg">
-                      <span class="flex size-8 shrink-0 items-center justify-center border border-border bg-background"><i class="ri-newspaper-line text-lg" aria-hidden="true"></i></span>
-                      <span class="truncate">New-hire onboarding</span>
-                      <span class="flex size-6 shrink-0 items-center justify-center border border-border bg-background text-foreground"><i class="ri-loader-4-line text-lg/none" aria-hidden="true"></i></span>
-                    </div>
-                    <span class="block h-3 w-px bg-foreground"></span>
-                    <!-- Branches: a bar from the first app column's center to
-                         the last's (half a column in from each side, columns
-                         being a third of the width less two gaps), then a drop
-                         into each app. -->
-                    <div class="relative w-full max-w-[30rem]">
-                      <span class="absolute top-0 right-[calc((100%-1.75rem)/6)] left-[calc((100%-1.75rem)/6)] h-px bg-foreground"></span>
-                      <div class="grid grid-cols-3 gap-3.5">
-                        <div class="flex flex-col items-center">
-                          <span class="block h-4 w-px bg-foreground"></span>
-                          <div class="relative flex size-13 items-center justify-center border border-border bg-muted">
-                            <span aria-hidden="true" class="logo logo-okta size-7"></span>
-                            <span class="absolute -top-3 -right-3 flex size-6 items-center justify-center border border-border bg-background text-green-700"><i class="ri-check-line text-lg/none" aria-hidden="true"></i></span>
-                          </div>
-                        </div>
-                        <div class="flex flex-col items-center">
-                          <span class="block h-4 w-px bg-foreground"></span>
-                          <div class="relative flex size-13 items-center justify-center border border-border bg-muted">
-                            <i class="ri-google-fill text-[28px]/none" aria-hidden="true"></i>
-                            <span class="absolute -top-3 -right-3 flex size-6 items-center justify-center border border-border bg-background text-green-700"><i class="ri-check-line text-lg/none" aria-hidden="true"></i></span>
-                          </div>
-                        </div>
-                        <div class="flex flex-col items-center">
-                          <span class="block h-4 w-px bg-foreground"></span>
-                          <div class="relative flex size-13 items-center justify-center border border-border bg-background">
-                            <span aria-hidden="true" class="logo logo-slack size-7 opacity-40 grayscale"></span>
-                            <span class="absolute -top-3 -right-3 flex size-6 items-center justify-center border border-border bg-background text-foreground"><i class="ri-loader-4-line text-lg/none" aria-hidden="true"></i></span>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
